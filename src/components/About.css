@@ -16,3 +16,24 @@
 	width: 400px;
 	object-fit: cover;
 }
+
+@media (max-width: 1100px) {
+	.about_content {
+		flex-direction: column-reverse;
+		text-align: center;
+		margin-top: 5rem;
+	}
+}
+
+@media (max-width: 550px) {
+	.about_content .about_text {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.about_content .me_img img {
+		width: 200px;
+		height: 200px;
+	}
+}
