@@ -5,6 +5,7 @@ export const skills = [
 			'HTML5',
 			'CSS3',
 			'Sass (Scss)',
+			'Bootstrap5',
 			'JavaScript',
 			'React Js',
 			'TypeScript',

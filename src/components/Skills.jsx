@@ -39,9 +39,9 @@ const Skills = ({ handleChangeSkill, filterData }) => {
 					<p>Tools</p>
 				</div>
 				<div className='skill-bar-items'>
-					{filterData.map((item, index) => (
+					{filterData?.map((item, index) => (
 						<div className='item-skill-bar' key={index}>
-							{item.languages.map((language, languageIndex) => (
+							{item?.languages?.map((language, languageIndex) => (
 								<p key={languageIndex}>{language}</p>
 							))}
 						</div>

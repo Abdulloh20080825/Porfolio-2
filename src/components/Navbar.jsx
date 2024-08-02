@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoMenu } from 'react-icons/io5';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Modal from './Modal';
 
 const Navbar = () => {
@@ -30,7 +30,9 @@ const Navbar = () => {
 				</ul>
 				<div className='nav_toggle'>
 					<IoMenu className='icon' onClick={() => setActive(!active)} />
-					<button className='nav_btn'>Resume</button>
+					<Link to={'https://rezume-ashen.vercel.app/'}>
+						<button className='nav_btn'>Resume</button>
+					</Link>
 				</div>
 			</nav>
 			{active ? (

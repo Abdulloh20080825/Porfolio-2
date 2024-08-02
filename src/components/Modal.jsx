@@ -8,19 +8,21 @@ const Modal = ({ setActive, active }) => {
 		<div className='modal'>
 			<IoClose className='close-icon' onClick={() => setActive(!active)} />
 			<ul className={`Modal_navigate`}>
-				<li className='modal_navigate'>
+				<li className='modal_navigate' onClick={() => setActive(!active)}>
 					<NavLink to={'/'}>Home</NavLink>
 				</li>
 				<li className='modal_navigate'>
-					<NavLink to={'/about'}>About</NavLink>
+					<NavLink to={'/about'} onClick={() => setActive(!active)}>
+						About
+					</NavLink>
 				</li>
-				<li className='modal_navigate'>
+				<li className='modal_navigate' onClick={() => setActive(!active)}>
 					<NavLink to={'/skills'}>Skills</NavLink>
 				</li>
-				<li className='modal_navigate'>
+				<li className='modal_navigate' onClick={() => setActive(!active)}>
 					<NavLink to={'/projects'}>Projects</NavLink>
 				</li>
-				<li className='modal_navigate'>
+				<li className='modal_navigate' onClick={() => setActive(!active)}>
 					<NavLink to={'/contact'}>Contact</NavLink>
 				</li>
 			</ul>
