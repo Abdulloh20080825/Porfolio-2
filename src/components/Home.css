@@ -1,0 +1,41 @@
+.main_content {
+	display: flex;
+	justify-content: space-between;
+	height: 80vh;
+	padding: 0 5rem;
+	align-items: center;
+}
+
+.main_text :where(h1, h2, h3) {
+	line-height: 40px;
+	background: -webkit-linear-gradient(#000000, #ffffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.main_content .me_img img {
+	border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+	.main_content {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.main_text h1 {
+		font-size: 25px;
+	}
+	.main_text h2 {
+		font-size: 20px;
+	}
+	.main_text h3 {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 350px) {
+	img {
+		width: 200px;
+	}
+}

@@ -1,0 +1,94 @@
+/* Existing CSS code */
+.skills_content {
+	height: 70vh;
+	display: flex;
+	padding: 0 5rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skills_content h1 {
+	color: #003ffca3;
+	margin-top: 40px;
+}
+
+.usage {
+	width: 100%;
+}
+.skills_content .usage_content .skill-box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.skills_content .tools_bar {
+	box-shadow: 3px 3px 10px rgba(#010a8c, #010a8c, #010a8c, 0.4);
+	margin-top: 100px;
+	height: auto;
+	width: 50%;
+	background-color: #2a066d;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header_tools_bar {
+	font-size: 24px;
+	font-weight: bold;
+	color: #091be1;
+	margin-bottom: 16px;
+}
+
+.item-skill-bar p {
+	margin: 4px 0;
+	font-size: 14px;
+	color: #fff;
+}
+
+@media (max-width: 1200px) {
+	.skills_content {
+		flex-direction: column;
+	}
+
+	.skills_content .usage_content {
+		margin-top: 2rem;
+		width: 100%;
+	}
+	.skills_content .usage_content .skill-box {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.skills_content .tools_bar {
+		width: 100%;
+	}
+}
+
+@media (max-width: 880px) {
+}
+
+@media (max-width: 768px) {
+	.skills_content {
+		padding: 0 2rem;
+		justify-content: center;
+		align-items: none;
+	}
+	.item-skill-bar p {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header_tools_bar {
+		font-size: 20px;
+	}
+	.item-skill-bar p {
+		font-size: 10px;
+	}
+	.skills_content .usage_content {
+		overflow-x: scroll;
+	}
+}
+
+::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+}
